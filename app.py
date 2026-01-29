@@ -26,7 +26,7 @@ st.markdown("""
         margin-bottom: 20px;
     }
     .status-booked { border-top: 5px solid #dc3545; }
-    .status-available { border-top: 5px solid #28a745; }
+    .status-available { border-top: 5px solid #28a745; } 
     </style>
     """, unsafe_allow_html=True)
 
