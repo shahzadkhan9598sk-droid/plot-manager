@@ -13,7 +13,7 @@ st.set_page_config(page_title="Real Estate Plot Manager", layout="wide", initial
 ADMIN_PASSWORD = "admin123" 
 MY_PHONE_NUMBER = "919876543210" # Enter your number with Country Code (e.g., 91 for India)
 # Clean URL to avoid Unicode Errors
-SHEET_URL = "https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID_HERE"
+SHEET_URL = "https://docs.google.com/spreadsheets/d/1cHYIjWDbamIVXeVX_AwIydJtNgV5Z64JQ_2mrMqTE5I/edit?usp=sharing"
 
 # --- 2. Database Connection ---
 try:
@@ -146,3 +146,4 @@ with tab3:
         if st.button("Save All Changes to Google Sheet"):
             conn.update(spreadsheet=SHEET_URL.strip(), data=edited_df)
             st.success("Database Updated Successfully!")
+
